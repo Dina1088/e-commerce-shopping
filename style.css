@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+header{
+    background-color:rgba(231, 236, 236, 0.603);
+        position: fixed;
+        width: 100%;
+        
+       
+}
+h1{
+    color:black;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    flex-wrap: wrap;
+}
+nav{
+    margin:10px; 
+    
+}
+header .container ul{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    list-style-type: none;
+    font-size: 20px;
+   
+    
+}
+header .container ul li:hover{
+    background-color:rgb(0, 0, 0);
+    color: white;
+   
+}
+#openCart{
+    cursor: pointer;
+    margin-top: 10px;
+}
+.active{
+    background-color: rgb(0, 0, 0);
+    color: white;
+   
+}
+
+#bar{
+    display: none;
+}
+
+@media(max-width:700px){
+    nav ul{
+        position:absolute;
+        top: 90px;
+        left:20%;
+        transform: translate(-20%,-70%);
+        flex-direction:row;
+        text-align: center;   
+        color: black;
+        font-weight: 800;
+        padding: 30px;
+        width: 100%;
+    }
+   
+    #bar{
+        display: block;
+    }
+ 
+}
+header .cart{
+    position: fixed;
+    top: 30;
+    right: -100%;
+    width:350px;
+    background-color: rgba(7, 7, 7, 0.829);
+    height: 100vh;
+    z-index: 999;
+}
+h2{
+    margin-top: 25px;
+}
+header .cart #closeCart{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+header .cart.active{
+    right: 0;
+    transition: 0.5s;
+}
+.totalDiv{
+    font-size: 30px;
+    text-align: center;
+}
+/* end header */
+/* start about */
+section .story-det{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 80%;
+    margin-top: 30px;
+    padding-top: 100px;
+    overflow:hidden;
+    width: 100%;
+}
+section .story-det img{
+    width: 50%;
+    height: 40vh;
+    margin-right: 20px;
+
+}
+section .story-det .text{
+    width: 100%;
+}
+
+section .story-det .text h1{
+    margin:auto;
+    font-size: 30px;
+
+}
+.about{
+    margin: 10px;
+    font-size: 20px;
+    width:90%;
+    height: 40vh;
+    border: none;
+    background-color: rgba(240, 248, 255, 0);
+    
+ 
+}
+section .story-det .text button{
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgba(240, 248, 255, 0);
+   
+}
+/* end about */
+.head{
+    background-image: url(images/hand-drawn-fashion-shop-pattern-background_23-2150849915.jpg);
+    background-position:center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+/* start content */
+section{
+    margin: auto;
+    width: 80%;
+    background-image: url(images/gray-concrete-background_53876-89449.avif);
+    background-position:center;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    color: black;
+
+}
+h3{
+    text-align: center;
+    margin-top: 40px;
+    border-bottom: 2px solid;
+}
+h3:hover{
+    color: rgb(132, 132, 143);
+    transition: 0.5s;
+}
+.content{
+    margin-top:100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+    gap: 20px;
+
+}
+.content .product-box img{
+    height: 300px;
+    width: 300px;
+}
+
+span{
+    font-size: 20px;
+}
+.box{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.box img{
+    width: 70px;
+}
+/* end content */
+.cards{
+    text-align: center;
+}
+form button{
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.bg{
+    background-image: url(images/abstract-bubble-mask-facebook-template_23-2151220432.jpg);
+    height: 80vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    margin-top: 40px;
+    background-attachment: fixed;
+}
+
+
+/* start footer */
+footer{ 
+    background-color:rgba(138, 145, 151, 0.349);
+    color: rgb(15, 15, 15);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    margin-top: 40px;
+    z-index: -30;
+
+    
+}
+footer .container ul{
+    display: flex;
+    list-style-type: none;
+    margin: auto;
+    padding: 10px;
+    justify-content:center;
+}
+
+footer .container ul li {
+    margin: 10px;
+    font-size: 30px;
+
+}
+
+footer .container .contact span{
+   margin: 40px;
+   gap: 10px;
+   font-size: 20px;
+   display: flex;
+   justify-content: center;
+}
+p{
+    text-align:center;
+    background-color:rgba(138, 145, 151, 0.349);
+    
+}
+footer p{
+    border: none;
+    background-color:rgba(138, 145, 151, 0);
+  
+}
+
+/* end footer */
+@media(max-width:375px){
+  nav{
+    position: relative;
+  }
+    nav ul{
+        position:absolute;
+        top: 50%;
+        left:20%;
+        transform: translate(-50%,-2%);
+        flex-direction:column;
+        text-align: center;   
+        color: rgb(0, 0, 0);
+        font-weight: 800;
+        padding: 30px;
+        width: 50%;
+        font-size: 5px;
+    }
+    .head{
+        background-image: url(images/hand-drawn-fashion-shop-pattern-background_23-2150849915.jpg);
+        background-size:cover;
+       background-position: center;
+        margin: auto;
+        width: 200%;
+        height: 100vh;
+    }
+    section{
+        margin: auto;
+        background-image: url(images/gray-concrete-background_53876-89449.avif);
+        background-position:center;
+        background-size: cover;
+        width: 200%;
+        text-align: center;
+        color: black;
+    
+    }
+    .bg{
+        background-image: url(images/abstract-bubble-mask-facebook-template_23-2151220432.jpg);
+        height: 80vh;
+        width: 200%;
+        background-position: center;
+        background-size: cover;
+        margin-top: 40px;
+        background-attachment: fixed;
+    }
+    footer{ 
+        background-color:rgba(138, 145, 151, 0.349);
+        color: rgb(15, 15, 15);
+        padding: 20px;
+        text-align: center;
+        position: relative;
+        margin-top: 40px;
+        z-index: -30;
+        width: 200%;
+    
+        
+    }
+    iframe{
+        width: 200%;
+    }
+}
+
+@media(max-width:414px){
+    nav{
+      position: relative;
+    }
+      nav ul{
+          position:absolute;
+          top: 50%;
+          left:20%;
+          transform: translate(-50%,-2%);
+          flex-direction:column;
+          text-align: center;   
+          color: rgb(0, 0, 0);
+          font-weight: 800;
+          padding: 30px;
+          width: 50%;
+          font-size: 5px;
+      }
+      .head{
+          background-image: url(images/hand-drawn-fashion-shop-pattern-background_23-2150849915.jpg);
+          background-size:cover;
+         background-position: center;
+          margin: auto;
+          width: 200%;
+          height: 100vh;
+      }
+      section{
+          margin: auto;
+          background-image: url(images/gray-concrete-background_53876-89449.avif);
+          background-position:center;
+          background-size: cover;
+          width: 200%;
+          text-align: center;
+          color: black;
+      
+      }
+      .bg{
+          background-image: url(images/abstract-bubble-mask-facebook-template_23-2151220432.jpg);
+          height: 80vh;
+          width: 200%;
+          background-position: center;
+          background-size: cover;
+          margin-top: 40px;
+          background-attachment: fixed;
+      }
+      footer{ 
+        background-color:rgba(138, 145, 151, 0.349);
+        color: rgb(15, 15, 15);
+        padding: 20px;
+        text-align: center;
+        position: relative;
+        margin-top: 40px;
+        z-index: -30;
+        width: 200%;
+    }
+    iframe{
+        width: 200%;
+    }
+  }
+
+
+
+  
+
+
